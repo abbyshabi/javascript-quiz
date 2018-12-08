@@ -41,13 +41,13 @@ alert('Please select all answers');
 	} else {
 
 	 if (score === 0){
-		document.getElementById('message').value = 'you scored : ' + score;
+		document.getElementById('message').value = 'Try again, you scored : ' + score;
 	}
 	 else if (score <= 25)  {
-		document.getElementById('message').value = 'sorry try again , you scored : ' + score;
+		document.getElementById('message').value = 'You can do better , you scored : ' + score;
 	}
 	else if (score === 50){
-		document.getElementById('message').value = 'you can do even better , you scored : ' + score;
+		document.getElementById('message').value = 'There is room for improvement, you scored : ' + score;
 	}
 	else if (score > 50){
 		document.getElementById('message').value = 'congratulations! , you scored :' + score;

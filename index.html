@@ -6,61 +6,61 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	  <div class=" jumbotron">
-        <h1><strong> Welcome to The Computer-Quiz</strong></h1>
-        <h4><em> how well do you know about computers.......</em></h4>
+	 <div class=" jumbotron">
+	        <h1><strong> Welcome to The JavaScript-Quiz</strong></h1>
+	        <h4><em> how well do you know about javascript??.......</em></h4>
        </div>
-    <div class="container">
-        <form id="quiz" name="quiz">
-            <div id="ask">
-        <section>
-            <p><strong>Inside which HTML element do we put the JavaScript? </strong></p>
+    	<div class="container">
+         <form id="quiz" name="quiz">
+           <div id="ask">
+		        <section>
+		        	<h3><strong><em>Please answer all questions</em></strong></h3>
+		            <p><strong>Inside which HTML element do we put the JavaScript? </strong></p>
+		            <input type="radio" name="question1" value="a"> <code><</code>js<code>></code> <br>
+		            <input type="radio" name="question1" value="b"> <code><</code>javascript<code>></code> <br>
+		            <input type="radio" name="question1" value="c"> <code><</code> web <code>></code>  <br>
+		            <input type="radio" name="question1" value="d"> <code><</code>script<code>></code> <br><br>
+		      
+		        </section>
+		         <section>
+		            <p><strong>What is the correct JavaScript syntax to change the content of the HTML element below?<br><code><</code>p id="demo">This is a demonstration.<code><</code>/p>.</strong></p>
+		            <form id="q2">
+		            <input type="radio" name="question2" value="a"> #demo.innerHTML = "Hello World!";<br>
+		            <input type="radio" name="question2" value="b"> document.getElementByName("p").innerHTML = "Hello World!";<br>
+		            <input type="radio" name="question2" value="c"> document.getElementById("demo").innerHTML = "Hello World!";<br>
+		            <input type="radio" name="question2" value="d"> document.getElement("p").innerHTML = "Hello World!";<br><br>
+		        </section>
+			     <section>
+			            <p><strong>Where is the correct position to place a javascript link ?</strong></p>
+			            <input type="radio" name="question3" value="a"> <code><</code>body<code>></code> <br>
+			            <input type="radio" name="question3" value="b"> <code><</code> head<code>></code> <br>
+			            <input type="radio" name="question3" value="c"> <code><</code> body<code>></code> and <code><</code>head<code>></code> <br> 
+			            <input type="radio" name="question3" value="d"> <code><</code>title<code>></code> <br>
+			    </section>
+			       
+		       <section>
+		            <p><strong> How do you write "Hello World" in an alert box?</strong></p>
+		            <input type="radio" name="question4" id="q4" value="a"> msgBox("Hello World"); <br>
+		            <input type="radio" name="question4" id="q4" value="b"> alert("Hello World");<br>
+		            <input type="radio" name="question4" id="q4" value="c"> msg("Hello World");<br>
+		            <input type="radio" name="question4" id="q4" value="d"> alertBox("Hello World"); <br>
+		       </section><br>
+       		</div>
          
-            <input type="radio" name="question1" value="a"> <code><</code>js<code>></code> <br>
-            <input type="radio" name="question1" value="b"> <code><</code>javascript<code>></code> <br>
-            <input type="radio" name="question1" value="c"> <code><</code> web <code>></code>  <br>
-            <input type="radio" name="question1" value="d"> <code><</code>script<code>></code> <br><br>
-      
-        </section>
-         <section>
-            <p><strong>What is the correct JavaScript syntax to change the content of the HTML element below?<br><code><</code>p id="demo">This is a demonstration.<code><</code>/p>.</strong></p>
-            <form id="q2">
-            <input type="radio" name="question2" value="a"> #demo.innerHTML = "Hello World!";<br>
-            <input type="radio" name="question2" value="b"> document.getElementByName("p").innerHTML = "Hello World!";<br>
-            <input type="radio" name="question2" value="c"> document.getElementById("demo").innerHTML = "Hello World!";<br>
-            <input type="radio" name="question2" value="d"> document.getElement("p").innerHTML = "Hello World!";<br><br>
-       
-        </section>
-     
-            <p><strong>Where is the correct position to place a javascript link ?</strong></p>
-            <input type="radio" name="question3" value="a"> <code><</code>body<code>></code> <br>
-            <input type="radio" name="question3" value="b"> <code><</code> head<code>></code> <br>
-            <input type="radio" name="question3" value="c"> <code><</code> body<code>></code> and <code><</code>head<code>></code> <br> 
-            <input type="radio" name="question3" value="d"> <code><</code>title<code>></code> <br>
-    </section>
-       
-       <section>
-            <p><strong> How do you write "Hello World" in an alert box?</strong></p>
-            <input type="radio" name="question4" id="q4" value="a"> msgBox("Hello World"); <br>
-            <input type="radio" name="question4" id="q4" value="b"> alert("Hello World");<br>
-            <input type="radio" name="question4" id="q4" value="c"> msg("Hello World");<br>
-            <input type="radio" name="question4" id="q4" value="d"> alertBox("Hello World"); <br>
-       </section><br><br>
-        <button type="submit" id="bttn" value="Submit" onclick="compute()"><strong><em>Submit Quiz</em></strong></button><br>
-    </div>
          <!--<input id="button" type="button" value="Submit" onclick="check()" >-->
-        <div id="score">
-            <div class="box-4">
-                <p>
-                    <strong>Your Score is : <textarea type="text" name="Answer" rows="1" cols="45" id="message"></textarea>
-                </strong></p>
-            </div>
-                <button type = "reset" id="bttn1" value="reset" onclick="reset()"> Reset </button>
-            </div>
+	        <div class="box-4">
+	        	 <button type="submit" id="bttn" value="Submit" onclick="compute()"><strong><em>Submit Quiz</em></strong></button><br><br>
+	          <div id="score">
+	          
+	                <p>
+	                    <strong>Your Score is : <output name="Answer" rows="1" cols="45" id="message"><Strong><em>  </em></strong></output>
+	                </strong></p>
+	            </div>
+	                <button type = "reset" id="bttn1" value="reset" onclick="reset()"><strong><em> Reset </em></strong></button>
+	        </div>
         </form>
-        
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+      </div>
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	        <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
