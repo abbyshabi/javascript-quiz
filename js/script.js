@@ -76,7 +76,23 @@ alert('Please select all answers');
 			document.getElementById("question3").value = '';
 			document.getElementById("question4").value = '';
 
+	$(document).ready(function(){
+		$("#bttn1").click(function(){
+		   $("#ask").show();
+		}); 
+	});
 } 
+
+
+	$(document).ready(function(){
+	  $("#bttn").click(function(){
+	       $("#ask").hide();
+	    });
+	    $("#bttn1").click(function(){
+	       $("#ask").show();
+    }); 
+});
+ 
 
 
 
