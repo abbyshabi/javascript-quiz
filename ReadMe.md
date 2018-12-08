@@ -1,8 +1,8 @@
-# JavaScript Quiz
+# JavaScript Quizzer
 #### An online based application that allows users test their knowledge in JavaScript, (December,2018)
 #### By **Oluwadamilola Shabi**
 ## Description
-The Triangle-Tracker is a web based application that tests users knowledge in javasript by asking certain questions and allowing users answer and giving them their result at the end.
+The javascript quizzer is a web based application that tests users knowledge in javasript by asking certain questions and allowing users answer and giving them their result at the end.
 ## Setup/Installation Requirements
 * Access github on a web browser
 * clone this repository  from https://github.com/abbyshabi/javascript-quiz/tree/master
