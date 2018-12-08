@@ -36,7 +36,16 @@ function compute() {
 			}
 		}
 	}
+		if (score <= 25)  {
+			document.getElementById('message').value = 'sorry try again , you scored : ' + score;
+	}
+		else if (score === 50){
+			document.getElementById('message').value = 'you can do even better , you scored : ' + score;
+	}
+		else {
+			document.getElementById('message').value = 'congratulations! , you scored :' + score;
 
+	}
 
 
 
