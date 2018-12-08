@@ -47,7 +47,14 @@ function compute() {
 
 	}
 
+		function reset()  {
 
+			document.getElementById("question1").value = '';
+			document.getElementById("question2").value = '';
+			document.getElementById("question3").value = '';
+			document.getElementById("question4").value = '';
+
+} 
 
 
 
