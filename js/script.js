@@ -20,6 +20,14 @@ function compute() {
 			}
 		}
 	}
+		for (var i = 0, length = Q3.length; i < length; i++) {
+		if (Q3[i].checked) {
+			//alert(Q1[i].value);
+			if (Q3[i].value === 'c') {
+				score +=25
+			}
+		}
+	}
 
 
 
