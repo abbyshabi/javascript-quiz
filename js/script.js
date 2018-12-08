@@ -15,7 +15,7 @@ function compute() {
 	for (var i = 0, length = Q2.length; i < length; i++) {
 		if (Q2[i].checked) {
 			var ans2 = Q2[i].value
-			if (Q2[i].value === 'a') {
+			if (Q2[i].value === 'c') {
 				score +=25
 			}
 		}
@@ -91,4 +91,3 @@ $(document).ready(function(){
        $("#ask").show();
     }); 
 });
- 
