@@ -55,6 +55,7 @@ function compute() {
 			document.getElementById("question4").value = '';
 
 } 
+event.preventDefault();
 
 
 
