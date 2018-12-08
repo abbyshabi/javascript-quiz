@@ -11,6 +11,15 @@ function compute() {
 					score +=25
 			}
 		}
+	}
+		for (var i = 0, length = Q2.length; i < length; i++) {
+		if (Q2[i].checked) {
+			//alert(Q1[i].value);
+			if (Q2[i].value === 'a') {
+				score +=25
+			}
+		}
+	}
 
 
 
