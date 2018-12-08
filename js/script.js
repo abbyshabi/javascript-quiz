@@ -4,4 +4,45 @@ function compute() {
 	var Q3 = document.getElementsByName('question3');
 	var Q4 = document.getElementsByName('question4');
 	var score = 0;
+		for (var i = 0, length = Q1.length; i < length; i++) {
+			if (Q1[i].checked) {
+				//alert(Q1[i].value);
+				if (Q1[i].value === 'd') {
+					score +=25
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
