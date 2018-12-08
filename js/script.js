@@ -68,13 +68,12 @@ alert('Please select all answers');
 	});
 }
 } 
+function reset()  {
 
-		function reset()  {
-
-			document.getElementById("question1").value = '';
-			document.getElementById("question2").value = '';
-			document.getElementById("question3").value = '';
-			document.getElementById("question4").value = '';
+	document.getElementById("question1").value = '';
+	document.getElementById("question2").value = '';
+	document.getElementById("question3").value = '';
+	document.getElementById("question4").value = '';
 
 	$(document).ready(function(){
 		$("#bttn1").click(function(){
@@ -84,45 +83,12 @@ alert('Please select all answers');
 } 
 
 
-	$(document).ready(function(){
-	  $("#bttn").click(function(){
-	       $("#ask").hide();
-	    });
-	    $("#bttn1").click(function(){
-	       $("#ask").show();
+$(document).ready(function(){
+  $("#bttn").click(function(){
+       $("#ask").hide();
+    });
+    $("#bttn1").click(function(){
+       $("#ask").show();
     }); 
 });
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
