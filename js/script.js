@@ -4,48 +4,70 @@ function compute() {
 	var Q3 = document.getElementsByName('question3');
 	var Q4 = document.getElementsByName('question4');
 	var score = 0;
-		for (var i = 0, length = Q1.length; i < length; i++) {
-			if (Q1[i].checked) {
-				//alert(Q1[i].value);
-				if (Q1[i].value === 'd') {
-					score +=25
+	for (var i = 0, length = Q1.length; i < length; i++) {
+		if (Q1[i].checked) {
+			var ans1 = Q1[i].value
+			if (Q1[i].value === 'd') {
+				score +=25
 			}
 		}
 	}
-		for (var i = 0, length = Q2.length; i < length; i++) {
+	for (var i = 0, length = Q2.length; i < length; i++) {
 		if (Q2[i].checked) {
-			//alert(Q1[i].value);
+			var ans2 = Q2[i].value
 			if (Q2[i].value === 'a') {
 				score +=25
 			}
 		}
 	}
-		for (var i = 0, length = Q3.length; i < length; i++) {
+	for (var i = 0, length = Q3.length; i < length; i++) {
 		if (Q3[i].checked) {
-			//alert(Q1[i].value);
+			var ans3 = Q3[i].value;
 			if (Q3[i].value === 'c') {
 				score +=25
 			}
 		}
 	}
-	 	for (var i = 0, length = Q4.length; i < length; i++) {
+	for (var i = 0, length = Q4.length; i < length; i++) {
 		if (Q4[i].checked) {
-			//alert(Q1[i].value);
+			var ans4 = Q4[i].value
 			if (Q4[i].value === 'b') {
 				score +=25
 			}
 		}
 	}
-		if (score <= 25)  {
-			document.getElementById('message').value = 'sorry try again , you scored : ' + score;
+	if (ans1 == undefined || ans2 == undefined || ans3 == undefined || ans4 == undefined) {
+alert('Please select all answers');
+	} else {
+
+	 if (score === 0){
+		document.getElementById('message').value = 'you scored : ' + score;
 	}
-		else if (score === 50){
-			document.getElementById('message').value = 'you can do even better , you scored : ' + score;
+	 else if (score <= 25)  {
+		document.getElementById('message').value = 'sorry try again , you scored : ' + score;
 	}
-		else {
-			document.getElementById('message').value = 'congratulations! , you scored :' + score;
+	else if (score === 50){
+		document.getElementById('message').value = 'you can do even better , you scored : ' + score;
+	}
+	else if (score > 50){
+		document.getElementById('message').value = 'congratulations! , you scored :' + score;
 
 	}
+	else {
+		document.getElementById('message').value = 'Please select an answer'
+	}
+
+		event.preventDefault();
+	//var fail = "Try again ";
+	//var message = "congratulations!"; 
+
+	$(document).ready(function(){
+		$("#bttn").click(function(){
+			$("#ask").hide();
+		});
+	});
+}
+} 
 
 		function reset()  {
 
@@ -55,7 +77,7 @@ function compute() {
 			document.getElementById("question4").value = '';
 
 } 
-event.preventDefault();
+
 
 
 
