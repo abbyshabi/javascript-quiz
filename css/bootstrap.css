@@ -370,6 +370,8 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.5rem;
+  text-align: center;
+  
 }
 
 h2, .h2 {
@@ -554,7 +556,8 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
-  padding-top: 25px;
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 @media (min-width: 576px) {
