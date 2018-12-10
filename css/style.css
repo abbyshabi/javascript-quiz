@@ -9,7 +9,19 @@ button{
 	align-items: center;
 
 }
-output{
+text-area{
 	padding-bottom: 25px;
+	padding-top: 20px;
 }
-
+body{
+	background-image: url(quiz.jpg);
+	background-filter: alpha;
+}
+.container{
+	width: 75%;
+}
+.jumbotron{
+	margin-top: 35px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}

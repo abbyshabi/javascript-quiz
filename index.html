@@ -13,7 +13,7 @@
     	<div class="container">
          <form id="quiz" name="quiz">
            <div id="ask">
-		        <section>
+		        <section class="question">
 		        	<h3><strong><em>Please answer all questions</em></strong></h3>
 		            <p><strong>Inside which HTML element do we put the JavaScript? </strong></p>
 		            <input type="radio" name="question1" value="a"> <code><</code>js<code>></code> <br>
@@ -22,15 +22,15 @@
 		            <input type="radio" name="question1" value="d"> <code><</code>script<code>></code> <br><br>
 		      
 		        </section>
-		         <section>
+		         <section class="question">
 		            <p><strong>What is the correct JavaScript syntax to change the content of the HTML element below?<br><code><</code>p id="demo">This is a demonstration.<code><</code>/p>.</strong></p>
 		            <form id="q2">
 		            <input type="radio" name="question2" value="a"> #demo.innerHTML = "Hello World!";<br>
-		            <input type="radio" name="question2" value="b"> document.getElementByName("p").innerHTML = "Hello World!";<br>
-		            <input type="radio" name="question2" value="c"> document.getElementById("demo").innerHTML = "Hello World!";<br>
-		            <input type="radio" name="question2" value="d"> document.getElement("p").innerHTML = "Hello World!";<br><br>
+		            <input type="radio" name="question2" value="b"> document.getElementsByName("p").innerHTML = "Hello World!";<br>
+		            <input type="radio" name="question2" value="c"> document.getElementsById("demo").innerHTML = "Hello World!";<br>
+		            <input type="radio" name="question2" value="d"> document.getElements("p").innerHTML = "Hello World!";<br><br>
 		        </section>
-			     <section>
+			     <section class="question">
 			            <p><strong>Where is the correct position to place a javascript link ?</strong></p>
 			            <input type="radio" name="question3" value="a"> <code><</code>body<code>></code> <br>
 			            <input type="radio" name="question3" value="b"> <code><</code> head<code>></code> <br>
@@ -38,7 +38,7 @@
 			            <input type="radio" name="question3" value="d"> <code><</code>title<code>></code> <br>
 			    </section>
 			       
-		       <section>
+		       <section class="question">
 		            <p><strong> How do you write "Hello World" in an alert box?</strong></p>
 		            <input type="radio" name="question4" id="q4" value="a"> msgBox("Hello World"); <br>
 		            <input type="radio" name="question4" id="q4" value="b"> alert("Hello World");<br>
@@ -49,11 +49,11 @@
          
          <!--<input id="button" type="button" value="Submit" onclick="check()" >-->
 	        <div class="box-4">
-	        	 <button type="submit" id="bttn" value="Submit" onclick="compute()"><strong><em>Submit Quiz</em></strong></button><br><br>
+	        	 <button type="submit" id="bttn" value="Submit" onclick="computeQuiz()"><strong><em>Submit Quiz</em></strong></button><br><br>
 	          <div id="score">
 	          
 	                <p>
-	                    <strong>Your Score is : <output name="Answer" rows="1" cols="45" id="message"><Strong><em>  </em></strong></output>
+	                    <strong>Your Score is : <textarea name="Answer" rows="1" cols="45" id="message" disabled=""></textarea>
 	                </strong></p>
 	            </div>
 	                <button type = "reset" id="bttn1" value="reset" onclick="reset()"><strong><em> Reset </em></strong></button>

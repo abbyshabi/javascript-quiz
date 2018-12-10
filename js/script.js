@@ -1,4 +1,4 @@
-function compute() {
+function computeQuiz() {
 	var Q1 = document.getElementsByName('question1');
 	var Q2 = document.getElementsByName('question2');
 	var Q3 = document.getElementsByName('question3');
