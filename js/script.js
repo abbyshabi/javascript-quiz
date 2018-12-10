@@ -4,6 +4,7 @@ function computeQuiz() {
 	var Q3 = document.getElementsByName('question3');
 	var Q4 = document.getElementsByName('question4');
 	var score = 0;
+
 	for (var i = 0, length = Q1.length; i < length; i++) {
 		if (Q1[i].checked) {
 			var ans1 = Q1[i].value
@@ -58,16 +59,20 @@ alert('Please select all answers');
 	}
 
 		event.preventDefault();
+
 	//var fail = "Try again ";
 	//var message = "congratulations!"; 
 
-	$(document).ready(function(){
-		$("#bttn").click(function(){
-			$("#ask").hide();
-		});
-	});
+
+	//$(document).ready(function(){
+	//	$("#bttn").click(function(){
+	//		$("#ask").hide();
+	//	});
+	//});
+
 }
 } 
+
 function reset()  {
 
 	document.getElementById("question1").value = '';
@@ -90,4 +95,5 @@ $(document).ready(function(){
     $("#bttn1").click(function(){
        $("#ask").show();
     }); 
+
 });

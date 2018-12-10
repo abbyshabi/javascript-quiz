@@ -16,6 +16,7 @@ text-area{
 body{
 	background-image: url(quiz.jpg);
 	background-filter: alpha;
+	background-size: 100%;
 }
 .container{
 	width: 75%;
